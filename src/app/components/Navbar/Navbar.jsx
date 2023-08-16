@@ -7,10 +7,10 @@ import { usePathname } from "next/navigation";
 
 export function Navbar() {
   const pathname = usePathname();
-  const selected = "text-moanackOrange font-black";
+  const selected = "text-moanackOrange font-extraBold";
 
   return (
-    <header className="absolute w-full">
+    <header className="absolute w-full font-extraLight">
       <nav className="flex flex-row justify-between items-center p-full ">
         <Image src={logo} alt="Logo" className="w-[6em]" />
         <ul className="flex flex-row justify-end items-center gap-5 font-thin">
@@ -46,7 +46,7 @@ export function Navbar() {
           <li>
             <Link
               href="#"
-              className="px-half py-1 font-semibold rounded-full bg-moanackOrange"
+              className="px-half py-1 font-bold rounded-full bg-moanackOrange"
             >
               Agenda tu cita
             </Link>

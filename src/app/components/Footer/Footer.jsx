@@ -7,7 +7,7 @@ import tiktok from "../../../../public/footer/tiktok-icon.svg";
 import youtube from "../../../../public/footer/youtube-icon.svg";
 
 export function Footer() {
-  const sectionTitle = "text-white font-bold mb-full text-h6";
+  const sectionTitle = "text-white mb-full text-h6 font-footerSemiBold";
   const externalLinkClasses = "flex flex-row gap-2 items-center";
   const ulClasses = "flex flex-row flex-wrap md:flex-col gap-5";
   const separator = "bg-moanackGrey h-[0.05rem] w-full md:hidden";

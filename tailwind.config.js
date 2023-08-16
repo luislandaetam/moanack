@@ -30,7 +30,11 @@ module.exports = {
         xs: "0.6em",
       },
       fontFamily: {
-        footer: "EuclidCircularB",
+        extraLight: "HelveticaNowTextExtraLight",
+        extraBold: "HelveticaNowTextExtraBold",
+        bold: "HelveticaNowTextBold",
+        footer: "EuclidCircularBRegular",
+        footerSemiBold: "EuclidCircularBSemiBold",
         auxiliar: "BebasNeue",
       },
     },

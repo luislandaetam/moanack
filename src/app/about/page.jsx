@@ -17,12 +17,10 @@ export default function About() {
           <h2 className="text-moanackOrange font-bold text-h5">
             Dr. Jorge Moanack
           </h2>
-          <h1 className="font-black text-h3">
+          <h1 className="font-extraBold text-h3">
             Endourología y cirugía mínimamente invasiva.
           </h1>
-          <h3 className="text-moanackOrange font-thin text-h6">
-            Caracas, Venezuela.
-          </h3>
+          <h3 className="text-moanackOrange text-h6">Caracas, Venezuela.</h3>
         </section>
         <section className="mt-full">
           <p>
