@@ -10,9 +10,9 @@ export function Navbar() {
   const selected = "text-moanackOrange font-black";
 
   return (
-    <header className="flex flex-row justify-between items-center p-full absolute">
-      <Image src={logo} alt="Logo" className="w-[6em]" />
-      <nav>
+    <header className="absolute w-full">
+      <nav className="flex flex-row justify-between items-center p-full ">
+        <Image src={logo} alt="Logo" className="w-[6em]" />
         <ul className="flex flex-row justify-end items-center gap-5 font-thin">
           <li>
             <Link href="/" className={pathname === "/" ? selected : ""}>
@@ -21,8 +21,8 @@ export function Navbar() {
           </li>
           <li>
             <Link
-              href="/about-me"
-              className={pathname === "/about-me" ? selected : ""}
+              href="/about"
+              className={pathname === "/about" ? selected : ""}
             >
               Sobre mí
             </Link>
