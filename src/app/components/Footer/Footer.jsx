@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import footerLogo from "../../../../public/footer/logo-footer.png";
 import whatsapp from "../../../../public/footer/whatsapp-icon.svg";
 import email from "../../../../public/footer/email-icon.svg";
@@ -17,8 +18,8 @@ export function Footer() {
     <footer className="bg-[#161B27] text-moanackGrey p-full font-footer text-xs">
       <article className="flex flex-col gap-5 md:flex-row flex-nowrap justify-between items-start mb-full">
         <section>
-          <Image src={footerLogo} alt="Logo" />
-          <p>Moanack 2023. Todos los derechos reservados.</p>
+          <Image src={footerLogo} alt="Logo" className="w-80 mb-full" />
+          <p className="mb-5">Moanack 2023. Todos los derechos reservados.</p>
           <a href="mailto:consultas@moanack.com" target="_blank">
             consultas@moanack.com
           </a>
@@ -27,10 +28,10 @@ export function Footer() {
         <section>
           <h4 className={sectionTitle}>Moanack</h4>
           <ul className={ulClasses}>
-            <li>Contáctame</li>
-            <li>Política de privacidad</li>
+            <li>
+              <Link href="/contact">Contáctame</Link>
+            </li>
             <li>Términos y condiciones</li>
-            <li>Política de seguridad</li>
           </ul>
         </section>
         <div className={separator} />
@@ -38,14 +39,12 @@ export function Footer() {
           <h4 className={sectionTitle}>Da Vinci Xi</h4>
           <ul className={ulClasses}>
             <li>Fabricante</li>
-            <li>Casos estudios</li>
           </ul>
         </section>
         <div className={separator} />
         <section>
           <h4 className={sectionTitle}>Recursos</h4>
           <ul className={ulClasses}>
-            <li>Blog</li>
             <li>
               <a href="https://www.youtube.com/@Drmoanack" target="_blank">
                 Youtube

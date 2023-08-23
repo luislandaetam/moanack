@@ -7,6 +7,11 @@ import figure3 from "../../../public/davinci/figure-3.png";
 export default function DaVinciXi() {
   const bold = "font-bold";
   const extraBold = "font-extraBold";
+  const fullMargin = "my-full";
+  const extraTopMargin = "mt-xxl";
+  const imageWidth = "w-80 h-auto";
+  const figures = "grid grid-cols-3 gap-4";
+  const figureItems = "flex flex-col items-center";
 
   return (
     <main>
@@ -19,12 +24,12 @@ export default function DaVinciXi() {
           </h2>
         </section>
       </article>
-      <article className="bg-[#36415D] flex flex-col items-center">
+      <article className="bg-[#36415D] flex flex-col items-center px-xxxl">
         <section>
-          <h3 className={`${extraBold} text-h3`}>
+          <h3 className={`${extraBold} ${extraTopMargin} text-h3`}>
             Expandiendo lo que es posible
           </h3>
-          <p>
+          <p className={fullMargin}>
             Es justo decir que nadie espera con ansias una cirugía, pero a veces
             puede ser la mejor opción para tu cuidado. Si se considera que la
             cirugía es adecuada para ti, puedes explorar las diferentes formas
@@ -46,8 +51,10 @@ export default function DaVinciXi() {
           </p>
         </section>
         <section>
-          <h3 className={`${extraBold} text-h3`}>Mejorando las capacidades</h3>
-          <p>
+          <h3 className={`${extraBold} ${extraTopMargin} text-h3`}>
+            Mejorando las capacidades
+          </h3>
+          <p className={fullMargin}>
             Los médicos utilizamos muchas tecnologías que mejoran nuestras
             capacidades más allá de lo que permite el cuerpo humano. Por
             ejemplo, los escáneres de resonancia magnética y tomografía
@@ -59,9 +66,13 @@ export default function DaVinciXi() {
             </span>
           </p>
         </section>
-        <section>
-          <figure>
-            <Image src={figure1} alt="Doctor realizando cirugía robótica" />
+        <section className={figures}>
+          <figure className={figureItems}>
+            <Image
+              src={figure1}
+              alt="Doctor realizando cirugía robótica"
+              className={imageWidth}
+            />
             <figcaption>
               Estaré contigo en la sala de operaciones, sentado en la consola
               del sistema da Vinci. La consola le da a tu cirujano el control de
@@ -69,18 +80,23 @@ export default function DaVinciXi() {
               precisión.
             </figcaption>
           </figure>
-          <figure>
-            <Image src={figure2} alt="Vista durante cirugía robótica" />
+          <figure className={figureItems}>
+            <Image
+              src={figure2}
+              alt="Vista durante cirugía robótica"
+              className={imageWidth}
+            />
             <figcaption>
               El sistema de visión de da Vinci ofrece vistas de alta definición
               en 3D, brindándome una vista cristalina del área quirúrgica que se
               magnifica 10 veces más de lo que ve el ojo humano.
             </figcaption>
           </figure>
-          <figure>
+          <figure className={figureItems}>
             <Image
               src={figure3}
               alt="Dedos manejando robot durante cirugía robótica"
+              className={imageWidth}
             />
             <figcaption>
               En la intervención se utilizan instrumentos pequeños que se mueven
