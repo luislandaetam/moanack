@@ -2,8 +2,8 @@ import { Accordion } from "../Accordion/Accordion";
 
 export function FAQs() {
   return (
-    <article>
-      <h3 className="font-extraBold">
+    <article className="mt-xxl">
+      <h3 className="font-extraBold text-h3 text-center">
         ¿Tienes dudas? <br />
         Estas son las preguntas más frecuentes.
       </h3>

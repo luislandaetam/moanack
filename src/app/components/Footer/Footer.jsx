@@ -19,9 +19,11 @@ export function Footer() {
       <article className="flex flex-col gap-5 md:flex-row flex-nowrap justify-between items-start mb-full">
         <section>
           <Image src={footerLogo} alt="Logo" className="w-80 mb-full" />
-          <p className="mb-5">Moanack 2023. Todos los derechos reservados.</p>
+          <p className="mb-5">
+            Dr. Moanack 2023. Todos los derechos reservados.
+          </p>
           <a href="mailto:consultas@moanack.com" target="_blank">
-            consultas@moanack.com
+            consultas@drmoanack.com
           </a>
         </section>
         <div className={separator} />
@@ -75,7 +77,7 @@ export function Footer() {
             <li className={externalLinkClasses}>
               <Image src={email} alt="Email Icon" className={icons} />
               <a href="mailto:consultas@moanack.com" target="_blank">
-                consultas@moanack.com
+                consultas@drmoanack.com
               </a>
             </li>
             <li className={externalLinkClasses}>

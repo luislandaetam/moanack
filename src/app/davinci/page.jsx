@@ -3,14 +3,16 @@ import Image from "next/image";
 import figure1 from "../../../public/davinci/figure-1.png";
 import figure2 from "../../../public/davinci/figure-2.png";
 import figure3 from "../../../public/davinci/figure-3.png";
+import { FAQs } from "../components/FAQs/FAQs";
+import { Agenda } from "../components/Agenda/Agenda";
 
 export default function DaVinciXi() {
   const bold = "font-bold";
   const extraBold = "font-extraBold";
   const fullMargin = "my-full";
   const extraTopMargin = "mt-xxl";
-  const imageWidth = "w-80 h-auto";
-  const figures = "grid grid-cols-3 gap-4";
+  const imageWidth = "w-full h-auto";
+  const figures = "grid grid-cols-3 gap-4 ";
   const figureItems = "flex flex-col items-center";
 
   return (
@@ -66,7 +68,7 @@ export default function DaVinciXi() {
             </span>
           </p>
         </section>
-        <section className={figures}>
+        <section className={`${figures} ${extraTopMargin}`}>
           <figure className={figureItems}>
             <Image
               src={figure1}
@@ -106,6 +108,8 @@ export default function DaVinciXi() {
             </figcaption>
           </figure>
         </section>
+        <FAQs />
+        <Agenda />
       </article>
     </main>
   );
