@@ -1,6 +1,8 @@
 import "./globals.css";
 import { Navbar } from "./components/Navbar/Navbar";
 import { Footer } from "./components/Footer/Footer";
+import Image from "next/image";
+import logo from "../../public/navbar/logo.png";
 
 export const metadata = {
   title: "Moanack",
@@ -11,9 +13,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="es">
       <body>
-        <Navbar />
+        {/* <Navbar />
         {children}
-        <Footer />
+        <Footer /> */}
+        <Image src={logo} alt="logo" />
+        <h1>SITIO EN CONSTRUCCIÓN</h1>
       </body>
     </html>
   );

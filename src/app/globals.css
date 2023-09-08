@@ -61,4 +61,13 @@ body {
   padding: 0;
   color: white;
   font-size: calc(1.5rem + 0.390625vw);
+  background: url("../../public/about/bg.png");
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20%;
 }
