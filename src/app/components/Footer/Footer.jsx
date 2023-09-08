@@ -22,7 +22,7 @@ export function Footer() {
           <p className="mb-5">
             Dr. Moanack 2023. Todos los derechos reservados.
           </p>
-          <a href="mailto:consultas@moanack.com" target="_blank">
+          <a href="mailto:consultas@drmoanack.com" target="_blank">
             consultas@drmoanack.com
           </a>
         </section>
@@ -72,11 +72,11 @@ export function Footer() {
           <ul className={ulClasses}>
             <li className={externalLinkClasses}>
               <Image src={whatsapp} alt="WhatsApp Icon" className={icons} />
-              <a href="#">+58 000-000.00.00</a>
+              <a href="tel:+584241406600">+58 424-140.66.00</a>
             </li>
             <li className={externalLinkClasses}>
               <Image src={email} alt="Email Icon" className={icons} />
-              <a href="mailto:consultas@moanack.com" target="_blank">
+              <a href="mailto:consultas@drmoanack.com" target="_blank">
                 consultas@drmoanack.com
               </a>
             </li>

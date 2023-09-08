@@ -1,0 +1,11 @@
+.headerBackground {
+  background: url("../../public/davinci/bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.expBackground {
+  background: url("../../public/home/bg-exp.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
