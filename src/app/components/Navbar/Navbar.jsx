@@ -8,7 +8,10 @@ import { Hamburger } from "../Hamburger/Hamburger";
 
 export function Navbar() {
   const pathname = usePathname();
-  const selected = "text-moanackOrange font-extraBold";
+
+  const selected = " text-moanackOrange font-extraBold";
+  const notSelected =
+    "bg-no-repeat bg-left-bottom pb-[4px] rounded-sm bg-gradient-to-r from-[#EC9357] to-[#EC9357] w-fit bg-[length:0%_2px] hover:bg-[length:100%_3px] transition-all ease-in-out duration-500";
 
   return (
     <header className="fixed lg:absolute lg:top-0 lg:left-0 w-full p-full font-extraLight z-20">
@@ -16,14 +19,17 @@ export function Navbar() {
         <Image src={logo} alt="Logo" className="w-[6em]" />
         <ul className="hidden lg:flex flex-row justify-end items-center gap-20 font-thin">
           <li>
-            <Link href="/" className={pathname === "/" ? selected : ""}>
+            <Link
+              href="/"
+              className={pathname === "/" ? selected : notSelected}
+            >
               Inicio
             </Link>
           </li>
           <li>
             <Link
               href="/about"
-              className={pathname === "/about" ? selected : ""}
+              className={pathname === "/about" ? selected : notSelected}
             >
               Sobre mí
             </Link>
@@ -31,7 +37,7 @@ export function Navbar() {
           <li>
             <Link
               href="/davinci"
-              className={pathname === "/davinci" ? selected : ""}
+              className={pathname === "/davinci" ? selected : notSelected}
             >
               Da Vinci Xi
             </Link>
@@ -39,7 +45,7 @@ export function Navbar() {
           <li>
             <Link
               href="/contact"
-              className={pathname === "/contact" ? selected : ""}
+              className={pathname === "/contact" ? selected : notSelected}
             >
               Contáctame
             </Link>
