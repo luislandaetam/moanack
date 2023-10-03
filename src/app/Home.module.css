@@ -1,11 +1,11 @@
-.headerBackground {
-  background: url("../../public/davinci/bg.png");
-  background-size: cover;
+.firstBackground {
+  background: url("../../public/home/firstDivider.png");
+  background-size: auto, 300%, contain;
   background-repeat: no-repeat;
 }
 
-.expBackground {
-  background: url("../../public/home/bg-exp.png");
+.secondBackground {
+  background: url("../../public/home/secondDivider.png");
   background-size: cover;
   background-repeat: no-repeat;
 }

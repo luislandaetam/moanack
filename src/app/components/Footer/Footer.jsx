@@ -13,6 +13,7 @@ export function Footer() {
   const ulClasses = "flex flex-row flex-wrap md:flex-col gap-5";
   const separator = "bg-moanackGrey h-[0.05rem] w-full md:hidden";
   const icons = "w-11";
+  const linkHover = "hover:text-white transition-all ease-in-out";
 
   return (
     <footer className="bg-[#161B27] text-moanackGrey p-full font-footer text-xs">
@@ -31,7 +32,9 @@ export function Footer() {
           <h4 className={sectionTitle}>Moanack</h4>
           <ul className={ulClasses}>
             <li>
-              <Link href="/contact">Contáctame</Link>
+              <Link href="/contact" className={linkHover}>
+                Contáctame
+              </Link>
             </li>
             <li>Términos y condiciones</li>
           </ul>
@@ -48,12 +51,20 @@ export function Footer() {
           <h4 className={sectionTitle}>Recursos</h4>
           <ul className={ulClasses}>
             <li>
-              <a href="https://www.youtube.com/@Drmoanack" target="_blank">
+              <a
+                href="https://www.youtube.com/@Drmoanack"
+                target="_blank"
+                className={linkHover}
+              >
                 Youtube
               </a>
             </li>
             <li>
-              <a href="https://www.instagram.com/dr.moanack/" target="_blank">
+              <a
+                href="https://www.instagram.com/dr.moanack/"
+                target="_blank"
+                className={linkHover}
+              >
                 Instagram
               </a>
             </li>
@@ -61,6 +72,7 @@ export function Footer() {
               <a
                 href="https://www.linkedin.com/in/jorge-moanack-61783186/"
                 target="_blank"
+                className={linkHover}
               >
                 Linkedin
               </a>
@@ -72,29 +84,47 @@ export function Footer() {
           <ul className={ulClasses}>
             <li className={externalLinkClasses}>
               <Image src={whatsapp} alt="WhatsApp Icon" className={icons} />
-              <a href="tel:+584241406600">+58 424-140.66.00</a>
+              <a href="tel:+584241406600" className={linkHover}>
+                +58 424-140.66.00
+              </a>
             </li>
             <li className={externalLinkClasses}>
               <Image src={email} alt="Email Icon" className={icons} />
-              <a href="mailto:consultas@drmoanack.com" target="_blank">
+              <a
+                href="mailto:consultas@drmoanack.com"
+                target="_blank"
+                className={linkHover}
+              >
                 consultas@drmoanack.com
               </a>
             </li>
             <li className={externalLinkClasses}>
               <Image src={instagram} alt="Instagram Icon" className={icons} />
-              <a href="https://www.instagram.com/dr.moanack/" target="_blank">
+              <a
+                href="https://www.instagram.com/dr.moanack/"
+                target="_blank"
+                className={linkHover}
+              >
                 @dr.moanack
               </a>
             </li>
             <li className={externalLinkClasses}>
               <Image src={tiktok} alt="TikTok Icon" className={icons} />
-              <a href="https://www.tiktok.com/@drmoanack" target="_blank">
+              <a
+                href="https://www.tiktok.com/@drmoanack"
+                target="_blank"
+                className={linkHover}
+              >
                 @drmoanack
               </a>
             </li>
             <li className={externalLinkClasses}>
               <Image src={youtube} alt="YouTube Icon" className={icons} />
-              <a href="https://www.youtube.com/@Drmoanack" target="_blank">
+              <a
+                href="https://www.youtube.com/@Drmoanack"
+                target="_blank"
+                className={linkHover}
+              >
                 @drmoanack
               </a>
             </li>

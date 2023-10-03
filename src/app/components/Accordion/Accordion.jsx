@@ -1,12 +1,11 @@
 "use client";
 
 import { AskedQuestion } from "../AskedQuestion/AskedQuestion";
-import { Typography } from "@mui/material";
 
 export function Accordion() {
   const bold = "font-bold";
   return (
-    <section className="px-[5vw]">
+    <section className="px-half md:px-[5vw]">
       <div>
         <AskedQuestion
           question="¿Cómo funciona la cirugía asistida por robots?"

@@ -1,5 +1,7 @@
-import styles from "./DaVinciXi.module.css";
+"use client";
+
 import Image from "next/image";
+import YouTube from "react-youtube";
 import figure1 from "../../../public/davinci/figure-1.png";
 import figure2 from "../../../public/davinci/figure-2.png";
 import figure3 from "../../../public/davinci/figure-3.png";
@@ -12,23 +14,51 @@ export default function DaVinciXi() {
   const fullMargin = "my-full";
   const extraTopMargin = "mt-xxl";
   const imageWidth = "w-full h-auto";
-  const figures = "grid grid-cols-3 gap-4 ";
+  const figures = "grid grid-cols-1 md:grid-cols-3 gap-4";
   const figureItems = "flex flex-col items-center";
 
+  const onReady = (event) => {
+    event.target.pauseVideo();
+  };
+
+  const opts = {
+    height: "390",
+    width: "100%",
+    playerVars: {
+      autoplay: 1,
+    },
+  };
+
   return (
-    <main>
-      <article className={`${styles.main} h-screen`}>
+    <main className="px-xl md:px-xxxl bg-[#36415D]">
+      <article className="h-screen">
+        <video
+          autoPlay
+          muted
+          loop
+          className="min-w-[100vw] min-h-[100vh] object-cover m-0 p-0 absolute top-0 left-0"
+        >
+          <source src="/davinci/davinci-video.mp4" type="video/mp4" />
+        </video>
         <section className="flex flex-col justify-center items-center h-full w-full">
-          <h1 className={`${extraBold} text-h1`}>El futuro de las cirugías.</h1>
-          <h2 className="text-moanackOrange">
+          <h1 className={`${extraBold} text-h3 md:text-h1 text-center z-10`}>
+            El futuro de las cirugías.
+          </h1>
+          <h2 className="text-moanackOrange z-10 text-center">
             Cirugías <span className={bold}>mínimamente invasivas</span> al
             servicio de tu recuperación.
           </h2>
         </section>
       </article>
-      <article className="bg-[#36415D] flex flex-col items-center px-xxxl">
+      <article className="bg-[#36415D] flex flex-col items-center">
         <section>
-          <h3 className={`${extraBold} ${extraTopMargin} text-h3`}>
+          <YouTube
+            opts={opts}
+            videoId="zz67qpdmxZQ"
+            onReady={onReady}
+            className={extraTopMargin}
+          />
+          <h3 className={`${extraBold} ${extraTopMargin} text-h4 md:text-h3`}>
             Expandiendo lo que es posible
           </h3>
           <p className={fullMargin}>
@@ -53,7 +83,7 @@ export default function DaVinciXi() {
           </p>
         </section>
         <section>
-          <h3 className={`${extraBold} ${extraTopMargin} text-h3`}>
+          <h3 className={`${extraBold} ${extraTopMargin} text-h4 md:text-h3`}>
             Mejorando las capacidades
           </h3>
           <p className={fullMargin}>

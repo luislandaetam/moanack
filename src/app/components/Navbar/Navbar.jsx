@@ -4,16 +4,17 @@ import Image from "next/image";
 import Link from "next/link";
 import logo from "../../../../public/navbar/logo.png";
 import { usePathname } from "next/navigation";
+import { Hamburger } from "../Hamburger/Hamburger";
 
 export function Navbar() {
   const pathname = usePathname();
   const selected = "text-moanackOrange font-extraBold";
 
   return (
-    <header className="absolute w-full font-extraLight">
-      <nav className="flex flex-row justify-between items-center p-full ">
+    <header className="fixed lg:absolute lg:top-0 lg:left-0 w-full p-full font-extraLight z-20">
+      <nav className="flex flex-row justify-between items-center">
         <Image src={logo} alt="Logo" className="w-[6em]" />
-        <ul className="flex flex-row justify-end items-center gap-5 font-thin">
+        <ul className="hidden lg:flex flex-row justify-end items-center gap-20 font-thin">
           <li>
             <Link href="/" className={pathname === "/" ? selected : ""}>
               Inicio
@@ -44,14 +45,17 @@ export function Navbar() {
             </Link>
           </li>
           <li>
-            <Link
-              href="#"
-              className="px-half py-1 font-bold rounded-full bg-moanackOrange"
+            <a
+              href="https://api.whatsapp.com/send/?phone=584241406600&text&type=phone_number&app_absent=0"
+              className="px-half py-3 font-bold rounded-full bg-moanackOrange hover:bg-moanackGrey hover:text-white transition-all ease-in-out"
             >
               Agenda tu cita
-            </Link>
+            </a>
           </li>
         </ul>
+        <article className="h-12 flex flex-col justify-start items-center mb-4 text-white rounded-md lg:hidden font-bold">
+          <Hamburger />
+        </article>
       </nav>
     </header>
   );

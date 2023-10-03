@@ -61,7 +61,11 @@ body {
   padding: 0;
   color: white;
   font-size: calc(1.5rem + 0.390625vw);
-  background: url("../../public/about/bg.png");
+  overflow-x: hidden;
+
+  /* FOR ON-CONSTRUCTION MODE */
+
+  /* background: url("../../public/about/bg.png");
   background-size: cover;
   width: 100vw;
   height: 100vh;
@@ -69,5 +73,5 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 20%;
+  gap: 20%; */
 }
