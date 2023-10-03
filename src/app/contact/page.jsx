@@ -32,7 +32,8 @@ export default function Contact() {
           <p>Días: Miércoles.</p>
         </div>
         <a
-          href="tel:+584241406600"
+          href="https://api.whatsapp.com/send/?phone=584241406600&text&type=phone_number&app_absent=0"
+          target="_blank"
           className={`${linkClasses} text-moanackOrange`}
         >
           +58 424-140.66.00
@@ -51,7 +52,10 @@ export default function Contact() {
           <a href="https://www.tiktok.com/@drmoanack" target="_blank">
             <Image src={tiktok} aalt="TikTok Icon" className={icons} />
           </a>
-          <a href="tel:+584241406600">
+          <a
+            href="https://api.whatsapp.com/send/?phone=584241406600&text&type=phone_number&app_absent=0"
+            target="_blank"
+          >
             <Image src={whatsapp} alt="WhatsApp Icon" className={icons} />
           </a>
           <a href="mailto:consultas@drmoanack.com" target="_blank">

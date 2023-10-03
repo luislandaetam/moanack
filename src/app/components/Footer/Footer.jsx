@@ -84,7 +84,11 @@ export function Footer() {
           <ul className={ulClasses}>
             <li className={externalLinkClasses}>
               <Image src={whatsapp} alt="WhatsApp Icon" className={icons} />
-              <a href="tel:+584241406600" className={linkHover}>
+              <a
+                href="https://api.whatsapp.com/send/?phone=584241406600&text&type=phone_number&app_absent=0"
+                target="_blank"
+                className={linkHover}
+              >
                 +58 424-140.66.00
               </a>
             </li>
