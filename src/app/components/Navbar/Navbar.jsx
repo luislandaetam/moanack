@@ -53,9 +53,11 @@ export function Navbar() {
             </a>
           </li>
         </ul>
-        <article className="h-12 flex flex-col justify-start items-center mb-4 text-white rounded-md lg:hidden font-bold">
-          <Hamburger />
-        </article>
+        <section className="flex flex-row items-center gap-3">
+          <article className="h-12 flex flex-col justify-start items-center mb-4 text-white rounded-md lg:hidden font-bold">
+            <Hamburger />
+          </article>
+        </section>
       </nav>
     </header>
   );

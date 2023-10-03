@@ -1,0 +1,61 @@
+.bm-burger-button {
+  width: 36px;
+  height: 30px;
+  left: 36px;
+  top: 36px;
+}
+
+.bm-burger-bars {
+  background: #647491;
+}
+
+.bm-burger-bars-hover {
+  background: #212021;
+}
+
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+.bm-cross {
+  background: #647491;
+}
+
+.bm-menu-wrap {
+  position: fixed;
+  height: 100%;
+}
+
+.bm-menu {
+  background: #212021;
+  padding: 0.3rem 0.3rem 0;
+  font-size: 1.15em;
+}
+
+.bm-morph-shape {
+  fill: #647491;
+}
+
+.bm-item-list {
+  color: #647491;
+  padding: 2em 0.8em;
+}
+
+.bm-item {
+  display: inline-block;
+}
+
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+/* styling next link component so that will be a column list of links*/
+.bm-item-list a {
+  display: flex;
+  flex-direction: column;
+  padding: 0.3em 0;
+}

@@ -21,7 +21,7 @@ export function Hamburger() {
       <Menu
         customBurgerIcon={<HamburgerIcon />}
         width="auto"
-        className="absolute right-0 top-0 bg-moanackGrey"
+        className="right-0 top-0"
         right
         isOpen={isMenuOpen}
         onStateChange={(state) => handleStateChange(state)}
