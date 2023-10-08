@@ -1,6 +1,6 @@
 .firstBackground {
   background: url("../../public/home/firstDivider.png");
-  background-size: auto, 300%, contain;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 

@@ -2,18 +2,19 @@ import styles from "./Home.module.css";
 import Image from "next/image";
 import { OrangeButton } from "./components/OrangeButton/OrangeButton";
 import { WhiteButton } from "./components/WhiteButton.jsx/WhiteButton";
-import expMoanack from "../../public/home/exp.png";
 import { TransparentButton } from "./components/TransparentButton/TransparentButton";
-import { Slider } from "./components/Slider/Slider";
+import { ServicesSlider } from "./components/ServicesSlider/ServicesSlider";
 import { Testimonials } from "./components/Testimonials/Testimonials";
 import robot1 from "../../public/home/robot1.png";
 import robot2 from "../../public/home/robot2.png";
+import { TestimonialsSlider } from "./components/TestimonialsSlider/TestimonialsSlider";
+import { Services } from "./components/Services/Services";
 
 export default function Home() {
   return (
     <main className="bg-[#36415D]">
-      <article className={styles.firstBackground}>
-        <section className="h-[100vh] md:h-[150vh] grid grid-cols-1 md:grid-cols-2 items-center">
+      <article className={`${styles.firstBackground} pb-[10rem] mb-[10rem]`}>
+        <section className="h-[100vh] md:h-[110vh] grid grid-cols-1 md:grid-cols-2 items-center">
           <section className="px-xl">
             <h3 className="text-moanackOrange font-auxiliar uppercase text-h5 md:text-h3 leading-none">
               Cirugía Robótica
@@ -38,8 +39,7 @@ export default function Home() {
             </section>
           </section>
         </section>
-        <section className="grid grid-cols-1 md:grid-cols-2 -translate-y-[9.9rem] mx-xl relative min-h-[100vh]">
-          {/* <Image src={expMoanack} alt="Dr. Moanack" /> */}
+        <section className="grid grid-cols-1 md:grid-cols-2 -translate-y-[9.9rem] mx-xl relative max-h-[100vh]">
           <section className="col-start-2 my-[18rem]">
             <h2 className="uppercase font-auxiliar text-h3 md:text-h2 text-moanackOrange">
               Experiencia a la vanguardia
@@ -55,15 +55,20 @@ export default function Home() {
             <TransparentButton link="/about" content="Sobre mí" />
           </section>
         </section>
-        <section className="mx-xl min-h-[100vh]">
-          <section className="grid grid-cols-1 md:grid-cols-2">
+        <section className="max-h-[100vh]">
+          <section className="grid grid-cols-1 md:grid-cols-2 mx-xl">
             <h2 className="text-h3">
               <span className="font-bold">Tecnología</span>
               <br />
               en cada <span className="font-bold">procedimiento</span>
             </h2>
           </section>
-          <Slider />
+          <div className="my-xl lg:hidden">
+            <ServicesSlider />
+          </div>
+          <div className="my-xl mx-xl hidden lg:block">
+            <Services />
+          </div>
           <p className="mx-xl">
             Con más de dos décadas como urólogo de renombre en Venezuela, he
             tenido el privilegio de transformar vidas a través de mi experiencia
@@ -107,14 +112,19 @@ export default function Home() {
             />
           </div>
         </section>
-        <section className="flex flex-col items-center justify-center mx-xl mt-xl pb-xl text-center">
+        <section className="lg:flex flex-col items-center justify-center lg:mx-xl mt-xl pb-xl text-center">
           <h2 className="font-extraBold text-h3 md:text-h2 leading-none">
             ¿Qué piensan mis pacientes?
           </h2>
           <h3 className="text-moanackOrange font-bold mt-full text-h4 md:text-h3 my-full">
             Testimonios de esperanza y éxito
           </h3>
-          <Testimonials />
+          <div className="hidden lg:block">
+            <Testimonials />
+          </div>
+          <div className="lg:hidden">
+            <TestimonialsSlider />
+          </div>
         </section>
       </article>
     </main>

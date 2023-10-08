@@ -43,7 +43,15 @@ export function Footer() {
         <section>
           <h4 className={sectionTitle}>Da Vinci Xi</h4>
           <ul className={ulClasses}>
-            <li>Fabricante</li>
+            <li>
+              <a
+                href="https://www.intuitive.com/en-us/products-and-services/da-vinci"
+                target="_blank"
+                className={linkHover}
+              >
+                Fabricante
+              </a>
+            </li>
           </ul>
         </section>
         <div className={separator} />
