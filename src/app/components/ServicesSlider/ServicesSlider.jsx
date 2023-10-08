@@ -23,11 +23,11 @@ export function ServicesSlider() {
     "absolute top-0 left-0 w-full h-full opacity-0 hover:opacity-100 transition-all ease-in-out dureation-300";
 
   useEffect(() => {
-    new Glide(".glide").mount({ Controls, Breakpoints });
+    new Glide("#glide1").mount({ Controls, Breakpoints });
   }, []);
 
   return (
-    <div className="glide">
+    <div className="glide" id="glide1">
       <div className="glide__track" data-glide-el="track">
         <ul className="glide__slides">
           <li className="glide__slide">

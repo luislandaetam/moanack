@@ -19,11 +19,11 @@ export function TestimonialsSlider() {
   const illnessClasses = "text-[0.6em] mt-10";
 
   useEffect(() => {
-    new Glide(".glide").mount({ Controls, Breakpoints });
+    new Glide("#glide2").mount({ Controls, Breakpoints });
   }, []);
 
   return (
-    <div className="glide">
+    <div className="glide" id="glide2">
       <div className="glide__track" data-glide-el="track">
         <ul className="glide__slides">
           <li className="glide__slide">
