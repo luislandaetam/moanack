@@ -9,7 +9,8 @@ import endourologiaSlider from "../../../../public/home/endourologia-slider.png"
 import saludSlider from "../../../../public/home/salud-slider.png";
 import Glide, {
   Controls,
-  Breakpoints,
+  Swipe,
+  Autoplay,
 } from "@glidejs/glide/dist/glide.modular.esm";
 import { useEffect } from "react";
 
@@ -23,7 +24,11 @@ export function ServicesSlider() {
     "absolute top-0 left-0 w-full h-full opacity-0 hover:opacity-100 transition-all ease-in-out dureation-300";
 
   useEffect(() => {
-    new Glide("#glide1").mount({ Controls, Breakpoints });
+    new Glide("#glide1", {
+      autoplay: 5000,
+      hoverpause: false,
+      perSwipe: 1,
+    }).mount({ Controls, Swipe, Autoplay });
   }, []);
 
   return (

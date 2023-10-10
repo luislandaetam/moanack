@@ -5,7 +5,8 @@ import "@glidejs/glide/dist/css/glide.theme.min.css";
 import Image from "next/image";
 import Glide, {
   Controls,
-  Breakpoints,
+  Swipe,
+  Autoplay,
 } from "@glidejs/glide/dist/glide.modular.esm";
 import { useEffect } from "react";
 import antonio from "../../../../public/home/antonio.png";
@@ -19,7 +20,11 @@ export function TestimonialsSlider() {
   const illnessClasses = "text-[0.6em] mt-10";
 
   useEffect(() => {
-    new Glide("#glide2").mount({ Controls, Breakpoints });
+    new Glide("#glide2", {
+      autoplay: 5000,
+      hoverpause: false,
+      perSwipe: 1,
+    }).mount({ Controls, Swipe, Autoplay });
   }, []);
 
   return (
