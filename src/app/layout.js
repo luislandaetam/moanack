@@ -5,7 +5,7 @@ import { Footer } from "./components/Footer/Footer";
 
 export const metadata = {
   title: "Dr. Moanack",
-  description: "Consulta al mejor urólogo de Caracas",
+  description: "Agenda tu cita con el mejor urólogo de Caracas",
 };
 
 export default function RootLayout({ children }) {
@@ -20,6 +20,6 @@ export default function RootLayout({ children }) {
         {children}
         <Footer />
       </body>
-    </html>|
+    </html>
   );
 }
