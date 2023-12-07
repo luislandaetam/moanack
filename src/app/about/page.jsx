@@ -1,6 +1,6 @@
 import Image from "next/image";
 import styles from "./About.module.css";
-import moanack from "../../../public/about/moanack-pose.png";
+import moanack from "../../../public/about/moanack-about.png";
 import { OrangeButton } from "../components/OrangeButton/OrangeButton";
 
 export default function About() {

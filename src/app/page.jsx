@@ -112,7 +112,7 @@ export default function Home() {
             />
           </div>
         </section>
-        <section className="lg:flex flex-col items-center justify-center lg:mx-xl mt-xl pb-xl text-center">
+        {/* <section className="lg:flex flex-col items-center justify-center lg:mx-xl mt-xl pb-xl text-center">
           <h2 className="font-extraBold text-h3 md:text-h2 leading-none">
             ¿Qué piensan mis pacientes?
           </h2>
@@ -125,7 +125,7 @@ export default function Home() {
           <div className="lg:hidden">
             <TestimonialsSlider />
           </div>
-        </section>
+        </section> */}
       </article>
     </main>
   );
