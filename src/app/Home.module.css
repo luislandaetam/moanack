@@ -9,3 +9,83 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+.translate {
+  transform: translateY(-21%);
+}
+
+@media (min-width: 1024px) {
+  .firstBackground {
+    height: 0;
+    padding-bottom: 152.3121387283237%;
+  }
+  .secondBackground {
+    padding: 20rem 0 0 0;
+  }
+}
+
+@media screen and (min-width: 1024px) and (min-height: 768px) {
+  .translate {
+    transform: translateY(-38.3%);
+  }
+  .tecnologias {
+    transform: translateY(-45%);
+  }
+}
+
+@media screen and (min-width: 1280px) and (min-height: 800px) {
+  .translate {
+    transform: translateY(-7.2%);
+  }
+  .tecnologias {
+    transform: translateY(-9%);
+  }
+}
+
+@media screen and (min-width: 1366px) and (min-height: 768px) {
+  .translate {
+    transform: translateY(9%);
+  }
+
+  .tecnologias {
+    transform: translateY(7%);
+  }
+}
+
+@media screen and (min-width: 1440px) and (min-height: 900px) {
+  .translate {
+    transform: translateY(-0.5%);
+  }
+
+  .tecnologias {
+    transform: translateY(0.5%);
+  }
+}
+
+@media screen and (min-width: 1680px) and (min-height: 1050px) {
+  .translate {
+    transform: translateY(7.8%);
+  }
+
+  .tecnologias {
+    transform: translateY(9%);
+  }
+}
+
+@media screen and (min-width: 1920px) and (min-height: 1080px) {
+  .translate {
+    transform: translateY(22%);
+  }
+  .tecnologias {
+    transform: translateY(30%);
+  }
+}
+
+@media screen and (min-width: 1920px) and (min-height: 1200px) {
+  .translate {
+    transform: translateY(7.6%);
+  }
+  .tecnologias {
+    transform: translateY(15%);
+  }
+}

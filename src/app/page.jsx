@@ -4,17 +4,18 @@ import { OrangeButton } from "./components/OrangeButton/OrangeButton";
 import { WhiteButton } from "./components/WhiteButton.jsx/WhiteButton";
 import { TransparentButton } from "./components/TransparentButton/TransparentButton";
 import { ServicesSlider } from "./components/ServicesSlider/ServicesSlider";
-import { Testimonials } from "./components/Testimonials/Testimonials";
+// import { Testimonials } from "./components/Testimonials/Testimonials";
 import robot1 from "../../public/home/robot1.png";
 import robot2 from "../../public/home/robot2.png";
-import { TestimonialsSlider } from "./components/TestimonialsSlider/TestimonialsSlider";
+// import { TestimonialsSlider } from "./components/TestimonialsSlider/TestimonialsSlider";
 import { Services } from "./components/Services/Services";
+import moanack from "../../public/home/exp.png";
 
 export default function Home() {
   return (
     <main className="bg-[#36415D]">
       <article className={`${styles.firstBackground} pb-[10rem] mb-[10rem]`}>
-        <section className="h-[100vh] md:h-[110vh] grid grid-cols-1 md:grid-cols-2 items-center">
+        <section className="h-[100vh] md:max-h-[110vh] grid grid-cols-1 md:grid-cols-2 items-center">
           <section className="px-xl">
             <h3 className="text-moanackOrange font-auxiliar uppercase text-h5 md:text-h3 leading-none">
               Cirugía Robótica
@@ -39,7 +40,14 @@ export default function Home() {
             </section>
           </section>
         </section>
-        <section className="grid grid-cols-1 md:grid-cols-2 -translate-y-[9.9rem] mx-xl relative max-h-[100vh]">
+        <section
+          className={`${styles.translate} grid grid-cols-1 lg:grid-cols-2 mx-xl relative max-h-[100vh]`}
+        >
+          <Image
+            src={moanack}
+            alt="Moanack"
+            className="w-[60%] h-auto place-self-center hidden lg:block"
+          />
           <section className="col-start-2 my-[18rem]">
             <h2 className="uppercase font-auxiliar text-h3 md:text-h2 text-moanackOrange">
               Experiencia a la vanguardia
@@ -55,7 +63,7 @@ export default function Home() {
             <TransparentButton link="/about" content="Sobre mí" />
           </section>
         </section>
-        <section className="max-h-[100vh]">
+        <section className={`${styles.tecnologias} max-h-[100vh]`}>
           <section className="grid grid-cols-1 md:grid-cols-2 mx-xl">
             <h2 className="text-h3">
               <span className="font-bold">Tecnología</span>

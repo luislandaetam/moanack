@@ -37,6 +37,11 @@ module.exports = {
         footerSemiBold: "EuclidCircularBSemiBold",
         auxiliar: "BebasNeue",
       },
+      screens: {
+        "1xl": "1440px",
+        "2xl": "1680px",
+        "3xl": "1920px",
+      },
     },
   },
   plugins: [require("tailwind-scrollbar")],
